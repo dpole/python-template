@@ -1,5 +1,6 @@
 .. image:: https://travis-ci.com/dpole/python-template.svg?branch=master
     :target: https://travis-ci.com/dpole/python-template
+
 ***************
 python-template
 ***************
@@ -25,6 +26,10 @@ How to use
    https://github.com/username_or_organization/new_project
 2. Activate Travis-ci for your project. Follow this step of the 
    `tutorial <https://docs.travis-ci.com/user/tutorial/#to-get-started-with-travis-ci-using-github>`_.
+3. To allow the auto-deployment of the documentation to github pages,
+   got to the setting of your repo on Travis and set a variable called
+   ``GH_TOKEN`` with any value (if the repo is public, otherwise set it equal to
+   an access token of your personal account)
 3. On your local machine, clone this template and push it to your new repo
 
 .. code-block:: bash
