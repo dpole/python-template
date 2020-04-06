@@ -10,3 +10,10 @@ install:
 
 script:
   - pytest
+
+after_success: 
+  - sudo apt-get -qq update
+  - sudo apt-get install -y pandoc
+  - pip install travis-sphinx nbsphinx sphinx_rtd_theme jupyter_client ipykernel
+  - travis-sphinx build -n
+  - travis-sphinx deploy
