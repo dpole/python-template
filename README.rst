@@ -2,7 +2,7 @@
     :target: https://travis-ci.com/dpole/python-template
 
 .. image:: https://img.shields.io/badge/docs-dev-blue.svg
-    :target: https://travis-ci.com/dpole/python-template
+    :target: https://dpole.github.io/python-template/index.html
 
 ***************************************
 Template repository for python packages
@@ -54,6 +54,6 @@ How to use
       the files in it (don't forget ``__init__.py``)
    d. Edit the ``setup.py`` file. Don't forget to add the dependencies of your
       package in the ``isntall_requires`` list.
-   d. Edit every file in the ``docs/source`` folder and subfolders. 
-   c. Write doctrings using the
+   e. Edit every file in the ``docs/source`` folder and subfolders. 
+   f. Write doctrings using the
       `numpy sphinx syntax <https://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_numpy.html>`_
