@@ -47,11 +47,12 @@ How to use
 
 5. Edit your package
 
-   a. Edit this README. Remember to replace ``dpole/python-template`` with
-      ``username_or_organization/new_project`` in the urls of the badges (see the
-      ``image`` at the top of the file)
-   b. Rename the ``package_name`` folder with the name of your package and edit
-      the files in it (don't forget ``__init__.py``)
+   a. Edit this README. Remember to replace ``dpole`` with
+      ``username_or_organization`` and ``python-template`` with
+      ``new_project`` in the urls of the badges (see the ``image`` at the top
+      of the file).
+   b. Rename the ``package_name`` folder with the name of your package,
+      edit and/or rename the files in it (don't forget ``__init__.py``).
    d. Edit the ``setup.py`` file. Don't forget to add the dependencies of your
       package in the ``isntall_requires`` list.
    e. Edit every file in the ``docs/source`` folder and subfolders. 
