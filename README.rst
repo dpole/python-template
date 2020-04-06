@@ -8,6 +8,7 @@ Template repository for python packages
 
 Overview
 ########
+
 Minimize thinking when setting up your new python project. This (minimal)
 template project and folowing set of isntructions will allow you to have the
 following within minutes
@@ -19,6 +20,7 @@ following within minutes
 
 How to use
 ##########
+
 1. Create your (empty) project on github:
    https://github.com/username_or_organization/new_project
 2. Activate Travis-ci for your project. Follow this step of the 
@@ -26,6 +28,7 @@ How to use
 3. On your local machine, clone this template and push it to your new repo
 
 .. code-block:: bash
+
     git clone --bare https://github.com/dpole/python-template.git
     cd python-template
     git push --mirror https://github.com/username_or_organization/new_project
@@ -33,6 +36,7 @@ How to use
     rm -rf python-template
 
 4. Edit your package
+
    a. edit this README. Remember to replace ``dpole/python-template`` with
       ``username_or_organization/new_project`` in the urls of the badges (see the
       ``image`` at the top of the file)
