@@ -3,6 +3,11 @@
 First module of the package
 """
 
+__all__ = [
+    'multiply',
+]
+
+
 def multiply(a, b):
     """ Multiply two numbers
 

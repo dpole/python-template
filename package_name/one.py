@@ -3,6 +3,10 @@
 First module of the package
 """
 
+__all__ = [
+    'add',
+]
+
 def add(a, b):
     """ Add two numbers
 
