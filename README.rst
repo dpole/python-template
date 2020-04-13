@@ -41,6 +41,7 @@ How to use
 
        git clone --bare https://github.com/dpole/python-template.git
        cd python-template
+       git reset $(git commit-tree HEAD^{tree} -m "Template")
        git push --mirror https://github.com/username_or_organization/new_project
        cd ..
        rm -rf python-template
