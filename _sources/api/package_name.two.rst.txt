@@ -1,0 +1,22 @@
+package\_name.two
+=================
+
+.. automodule:: package_name.two
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+   
+      multiply
+   
+   
+
+   
+   
+   
+
+   
+   
+   

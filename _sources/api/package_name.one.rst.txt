@@ -1,0 +1,22 @@
+package\_name.one
+=================
+
+.. automodule:: package_name.one
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+   
+      add
+   
+   
+
+   
+   
+   
+
+   
+   
+   

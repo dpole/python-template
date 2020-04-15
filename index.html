@@ -1,0 +1,295 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Template repository for python packages &mdash; python-template 0.0.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="API" href="api.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="#" class="icon icon-home"> python-template
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="api.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples.html">Examples</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">python-template</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="#">Docs</a> &raquo;</li>
+        
+      <li>Template repository for python packages</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast.container,
+.nboutput.nblast.container {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast.container + .nbinput.container {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<a class="reference external image-reference" href="https://travis-ci.com/dpole/python-template"><img alt="https://travis-ci.com/dpole/python-template.svg?branch=master" src="https://travis-ci.com/dpole/python-template.svg?branch=master" /></a>
+<a class="reference external image-reference" href="https://dpole.github.io/python-template/index.html"><img alt="https://img.shields.io/badge/docs-dev-blue.svg" src="https://img.shields.io/badge/docs-dev-blue.svg" /></a>
+<div class="section" id="template-repository-for-python-packages">
+<h1>Template repository for python packages<a class="headerlink" href="#template-repository-for-python-packages" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
+<p>Minimize thinking when setting up your new python project. This (minimal)
+template project and the following set of instructions will allow you to get</p>
+<ul class="simple">
+<li><p>Standard python packaging structure</p></li>
+<li><p>Make a git-clone of your package pip installable</p></li>
+<li><p>Test your package automatically with pytest on Travis-ci</p></li>
+<li><p>Build and publish the documentation on github.io</p></li>
+</ul>
+</div>
+<div class="section" id="how-to-use">
+<h2>How to use<a class="headerlink" href="#how-to-use" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic">
+<li><p>Create your (empty) project on github:
+<a class="reference external" href="https://github.com/username_or_organization/new_project">https://github.com/username_or_organization/new_project</a></p></li>
+<li><p>Activate Travis-ci for your project. Follow this step of the
+<a class="reference external" href="https://docs.travis-ci.com/user/tutorial/#to-get-started-with-travis-ci-using-github">tutorial</a>.</p></li>
+<li><p>To allow the auto-deployment of the documentation to github pages</p>
+<ol class="loweralpha simple">
+<li><p>On github, in your repo settings, in the GitHub Pages section, set the
+<code class="docutils literal notranslate"><span class="pre">gh-pages</span> <span class="pre">branch</span></code> as the source</p></li>
+<li><p>On github, in your account setting, in the developer settings, generate a
+new personal access token (e.g., note <code class="docutils literal notranslate"><span class="pre">Travis-sphinx</span></code>, scope <code class="docutils literal notranslate"><span class="pre">repo</span></code>)</p></li>
+<li><p>On Travis, in your repo settings, set a variable called <code class="docutils literal notranslate"><span class="pre">GH_TOKEN</span></code> with
+value equal to the token you just created</p></li>
+</ol>
+</li>
+<li><p>On your local machine, clone this template and push it to your new repo</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git clone --bare https://github.com/dpole/python-template.git
+<span class="nb">cd</span> python-template
+git reset <span class="k">$(</span>git commit-tree HEAD^<span class="o">{</span>tree<span class="o">}</span> -m <span class="s2">&quot;Template&quot;</span><span class="k">)</span>
+git push --mirror https://github.com/username_or_organization/new_project
+<span class="nb">cd</span> ..
+rm -rf python-template
+</pre></div>
+</div>
+</li>
+<li><p>Edit your package</p>
+<ol class="loweralpha simple">
+<li><p>Edit this README. Remember to replace <code class="docutils literal notranslate"><span class="pre">dpole</span></code> with
+<code class="docutils literal notranslate"><span class="pre">username_or_organization</span></code> and <code class="docutils literal notranslate"><span class="pre">python-template</span></code> with
+<code class="docutils literal notranslate"><span class="pre">new_project</span></code> in the urls of the badges (see the <code class="docutils literal notranslate"><span class="pre">image</span></code> at the top
+of the file).</p></li>
+<li><p>Rename the <code class="docutils literal notranslate"><span class="pre">package_name</span></code> folder with the name of your package,
+edit and/or rename the files in it (don’t forget <code class="docutils literal notranslate"><span class="pre">__init__.py</span></code>).</p></li>
+</ol>
+<ol class="loweralpha simple" start="4">
+<li><p>Edit the <code class="docutils literal notranslate"><span class="pre">setup.py</span></code> file. Don’t forget to add the dependencies of your
+package in the <code class="docutils literal notranslate"><span class="pre">isntall_requires</span></code> list.</p></li>
+<li><p>Edit every file in the <code class="docutils literal notranslate"><span class="pre">docs/source</span></code> folder and subfolders.</p></li>
+<li><p>After the first minimal commit run
+<code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">reset</span> <span class="pre">$(git</span> <span class="pre">commit-tree</span> <span class="pre">HEAD^{tree}</span> <span class="pre">-m</span> <span class="pre">&quot;First</span> <span class="pre">commit&quot;)</span></code>, which will
+erase the history of the tempalte’s <code class="docutils literal notranslate"><span class="pre">master</span></code> branch from the one of
+your repository</p></li>
+<li><p>Write doctrings using the
+<a class="reference external" href="https://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_numpy.html">numpy sphinx syntax</a></p></li>
+</ol>
+</li>
+</ol>
+<div class="toctree-wrapper compound">
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="api.html" class="btn btn-neutral float-right" title="API" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Davide Poletti
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
