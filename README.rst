@@ -56,6 +56,10 @@ How to use
       edit and/or rename the files in it (don't forget ``__init__.py``).
    d. Edit the ``setup.py`` file. Don't forget to add the dependencies of your
       package in the ``isntall_requires`` list.
-   e. Edit every file in the ``docs/source`` folder and subfolders. 
-   f. Write doctrings using the
+   e. Edit every file in the ``docs/source`` folder and subfolders.
+   f. After the first minimal commit run
+      ``git reset $(git commit-tree HEAD^{tree} -m "First commit")``, which will
+      erase the history of the tempalte's ``master`` branch from the one of
+      your repository
+   g. Write doctrings using the
       `numpy sphinx syntax <https://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_numpy.html>`_
